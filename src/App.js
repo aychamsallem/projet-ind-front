@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './component/Home';
 import Chambres from './component/Chambres';
 import Reservation from './component/Reservation'
-import DetailsReservation from './component/DetailsReservation';
+import Tarifsdipo from './component/Tarifsdispo'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
        <Route path="/" element={<Home/>}></Route>
        <Route path="/chambres&prix" element={<Chambres/>}></Route>
        <Route path="/tarifs" element={<Reservation/>}></Route>
-       <Route path="/Details" element={<DetailsReservation/>}></Route>
+       <Route path="/tarifdispo" element={<Tarifsdipo/>}></Route>
 
      </Routes>
      </BrowserRouter>

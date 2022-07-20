@@ -41,6 +41,19 @@ function AddReservation(){
       
   }
 
+ function CalculDate(){
+
+var arriv = new Date(arriver)
+var dep = new Date(depart)
+var Difference_In_Time = dep.getTime() - arriv.getTime();
+var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+if ( isNaN(Difference_In_Days) || Difference_In_Days<0 ){
+  return 'saisir une date valide'
+}else {
+
+  return Difference_In_Days
+}
+ }
 
 
   return (
@@ -67,20 +80,19 @@ function AddReservation(){
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>nbrNights</Form.Label>
-        <Form.Control  onChange={(e)=>setnbrNights(e.target.value)}    />
+        <Form.Control  value={CalculDate()}  type="text"  />
+     
       </Form.Group>
 
-
+{/* 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>disponnibilité</Form.Label>
         <Form.Control  onChange={(e)=>setdisponnibilité(e.target.value)}   />
-      </Form.Group>
+      </Form.Group> */}
 
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>type_de_chambres </Form.Label>
+      
 
-        <Form.Control   onChange={(e)=>settype_de_chambres(e.target.value)}   type="text" placeholder="Nombre de personne" />
 
 
 
@@ -97,7 +109,6 @@ function AddReservation(){
 
 
       
-      </Form.Group>
 
 
       
@@ -105,9 +116,8 @@ function AddReservation(){
     </Form>
   
    
-    <Button onClick={()=>{AddReservation()}} variant="primary" type="submit">
-       poursuivre
-      </Button>
+    <Button onClick={()=>window.location.href='tarifdispo'} variant="primary" type="submit">
+    tarifs&disponniblité </Button>
 
 
     </div>
