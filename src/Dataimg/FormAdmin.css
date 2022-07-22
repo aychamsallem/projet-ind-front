@@ -1,0 +1,12 @@
+
+.forms{
+display: flex;
+padding-top: 5%;
+}
+.add{
+    width: 25%;
+}
+.edit{
+    width: 50%;
+    margin-left: 20%;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
-import { Button, Form, InputGroup } from 'react-bootstrap'
+import { Form, InputGroup } from 'react-bootstrap'
+import Boutton from './Boutton'
 
 
 export default function Reservation() {
@@ -115,9 +116,13 @@ if ( isNaN(Difference_In_Days) || Difference_In_Days<0 ){
   
     </Form>
   
-   
-    <Button onClick={()=>window.location.href='tarifdispo'} variant="primary" type="submit">
-    tarifs&disponniblité </Button>
+{/* <Boutton onClick={()=>window.location.href='tarifdispo'} ></Boutton> */}
+<div onClick={()=>window.location.href='tarifdispo'}>
+
+
+     <Boutton titre='tarifs'  variant="primary" type="submit"></Boutton>  
+
+</div>
 
 
     </div>

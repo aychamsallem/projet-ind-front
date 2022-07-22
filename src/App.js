@@ -4,6 +4,8 @@ import Home from './component/Home';
 import Chambres from './component/Chambres';
 import Reservation from './component/Reservation'
 import Tarifsdipo from './component/Tarifsdispo'
+import AdminAdd from './component/AdminAdd'
+import Confirmation from './component/Confirmation';
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
        <Route path="/chambres&prix" element={<Chambres/>}></Route>
        <Route path="/tarifs" element={<Reservation/>}></Route>
        <Route path="/tarifdispo" element={<Tarifsdipo/>}></Route>
+       <Route path="/Admin" element={<AdminAdd/>}></Route>
+       <Route path="/confirmation" element={<Confirmation/>}></Route>
+
+
 
      </Routes>
      </BrowserRouter>

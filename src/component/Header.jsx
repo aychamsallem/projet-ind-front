@@ -19,10 +19,11 @@ export default function Header() {
     <Nav className="me-auto">
       <Nav.Link href="/Chambres&prix">Chambres&Prix</Nav.Link>
       <Nav.Link href="/hotel"></Nav.Link>
-      <Nav.Link href="/laregion">La region</Nav.Link>
+      <Nav.Link href="/laregion">carte</Nav.Link>
       <Nav.Link href="/contact">Contat</Nav.Link>
-      <Nav.Link href="/reservation">Reservation</Nav.Link>
+      <Nav.Link href="/reservation">user</Nav.Link>
       <Nav.Link href="/blog">Blog</Nav.Link>
+      <Nav.Link href="/Admin">Admin</Nav.Link>
 
 
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../sliderCss/Boutton.css'
 
-export default function Boutton() {
+export default function Boutton(props){
   return (
     <div>
 
@@ -10,7 +10,7 @@ export default function Boutton() {
 <h1>Animation Buttons</h1>
 <p>Hover us and enjoy the satisfying neumorphic animation designs!</p>
 <div class="frame">
-  <button class="custom-btn btn-3"><span>Tarifs&Disponiblité</span></button>
+  <button class="custom-btn btn-3"><span>{props.titre}</span></button>
 
   {/* <button class="custom-btn btn-2">Read More</button>
   <button class="custom-btn btn-3"><span>Read More</span></button>

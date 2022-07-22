@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, Table } from 'react-bootstrap'
+import {  Table } from 'react-bootstrap'
+import Boutton from './Boutton'
 
 export default function tarifdispo() {
 
@@ -67,9 +68,14 @@ export default function tarifdispo() {
         </tr>
       </tbody>
     </Table>
-<Button>Confirmer votre reservation</Button>
+
+    <div onClick={()=>window.location.href='confirmation'}>
+
+<Boutton  titre='confirmation'></Boutton>
 
     </div>
+    </div>
+
   )
 }
 

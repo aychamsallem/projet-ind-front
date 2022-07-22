@@ -154,7 +154,7 @@ Reservez maintenant
 
 <div  onClick={()=>window.location.href='tarifs'}>
 
-<Boutton></Boutton>
+<Boutton titre='disponnibilté'></Boutton>
 </div>
 
 
