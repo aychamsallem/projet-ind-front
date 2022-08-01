@@ -6,6 +6,8 @@ import Reservation from './component/Reservation'
 import Tarifsdipo from './component/Tarifsdispo'
 import AdminAdd from './component/AdminAdd'
 import Confirmation from './component/Confirmation';
+import Getchambre from './component/Getchambre'
+import AdminEdit from './component/AdminEdit'
 
 
 function App() {
@@ -21,6 +23,12 @@ function App() {
        <Route path="/tarifdispo" element={<Tarifsdipo/>}></Route>
        <Route path="/Admin" element={<AdminAdd/>}></Route>
        <Route path="/confirmation" element={<Confirmation/>}></Route>
+       <Route path="/getchambre" element={<Getchambre/>}></Route>
+       <Route path="/Edit" element={<AdminEdit/>}></Route>
+
+
+
+
 
 
 

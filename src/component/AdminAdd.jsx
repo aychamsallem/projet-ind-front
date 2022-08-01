@@ -1,9 +1,10 @@
 import React from 'react'
 import { Form,Button } from 'react-bootstrap'
 import '../Dataimg/FormAdmin.css'
-import AdminEdit from './AdminEdit'
+import Modaladd from './Modaladd'
 import Boutton from './Boutton'
 import { useState } from 'react';
+import Getchambre from './Getchambre';
 
 
 export default function AdminAdd() {
@@ -42,7 +43,8 @@ export default function AdminAdd() {
 
 
     <div className='forms'>
-    <p className='titre'>Add chambre</p>
+     <Modaladd />
+    {/* <p className='titre'>Add chambre</p>
 
 <div className='add' >
 
@@ -77,14 +79,11 @@ export default function AdminAdd() {
       </Form.Group>
 
       <Button onClick={()=> {Add()}} variant="primary">Add</Button>
-{/* <Boutton titre='Add'></Boutton> */}
+<Boutton titre='Add'></Boutton>
      
       </div>
 
-      <div className='edit'>
-      <AdminEdit></AdminEdit>
-      </div>
-
+<Getchambre></Getchambre> */}
       </div>
 
 
